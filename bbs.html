@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WDD Final Project - BBS Page</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <link rel="stylesheet" href="assets/css/style_bbs.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+        </script> 
+        <script src = "assets/js/script_bbs.js"></script>
+    </head>
+    <body>
+        <!-- Sidebar Hamburger Icon -->
+        <div id = "sidebar-button">
+            <a id="nav-toggle">
+               <span></span>
+            </a>
+        </div>
+         <!-- Sidebar -->
+        <nav class = "sidebar-container">
+            <ul>
+                <a href = "index.html">
+                    <li class = "sidebar-item">Home</li>
+                </a>
+                <a href = "inspiration.html">
+                    <li class = "sidebar-item">Inspirations</li>
+                </a>
+                <a href = "bbs.html">
+                    <li class = "sidebar-item">BBS</li>
+                </a>
+                <a href = "#resource-page">
+                    <li class = "sidebar-item">Resources</li>
+                </a>
+                <a href = "#about-page">
+                    <li class = "sidebar-item">About</li>
+                </a>
+                <a href = "#contact-page">
+                    <li class = "sidebar-item">Contact</li>
+                </a>
+            </ul>
+        </nav>
+
+        <!-- Page Wrapper, Consisting of All the Sections on main page-->
+        <div class = "page-wrapper">
+            <div id = "background">
+                <div id = "background-overlay"></div>
+            </div>
+            <div id = "heading-container">
+                <div class = "heading">EduReach BBS</div>
+                <div id = "search">
+                    <input type = "text" class = "search-box">
+                    <img class = "search-button" src="assets/img/search.png">
+                </div>
+            </div>
+
+            <div id = "section-container">
+                <section class = "section" id = "optics-section">
+                    <div class = "section-name" id = "optics-name">Optics</div>
+                    <div class = "section-title" id = "optics-title">
+                        My Girls GoTech outreach experience
+                        <a href = "https://blog.cian-erc.org/2014/02/10/girls-gotech-outreach-by-cian-members-at-uc-berkeley/">check it out</a>
+                    </div>
+                    <div class = "section-content" id = "optics-content">
+                    On Jan. 25th 2014, the association of WICSE (Women in CS and EE) at UC Berkeley participated in a Girl Scouts event at the Girls Go Tech and Green conference. The conference invited professional women scientists and engineers to present several workshops in different areas, aiming to encourage middle school and high school girls to step into the field of STEM (science, technology, engineering, and math).   
+                    </div>
+                    <div id = "optics-reply">
+                        <input type = "text" class = "section-reply" placeholder = "Reply">
+                    </div>
+                </section>
+
+                <section class = "section" id = "robotics-section">
+                    <div class = "section-name" id = "robotics-name">Robotics</div>
+                    <div class = "section-title" id = "robotics-title">
+                        Found a great robot parts website!
+                        <a href ="http://www.dfrobot.com/">www.dfrobot</a>
+                    </div>
+                    <div class = "section-content" id = "robotics-content">
+                    Founded in 2008, DFRobot is a robotics and open source hardware provider, catering to hardware engineers, DIY enthusiasts and interactive designers. Our ever-growing product catalog boasts over 900 components and widgets from sensors, robotic platform, communication modules to 3D printers. 
+                    </div>
+                    <div id = "robotics-reply">
+                        <input type = "text" class = "section-reply" placeholder = "Reply">
+                    </div>
+                </section>
+
+                <section class = "section" id = "biochemistry-section">
+                    <div class = "section-name" id = "biochemistry-name">Biochemistry</div>
+                    <div class = "section-title" id = "biochemistry-title">I just came up with a cool experiment for pre-school outreach</div>
+                    <div id = "biochemistry-reply">
+                        <input type = "text" class = "section-reply" placeholder = "Reply">
+                    </div>
+                </section>
+            </div>
+            
+        </div>
+
+
+
+
+
+    </body>
+</html>

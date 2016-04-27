@@ -1,120 +1,83 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>WDD Homework 8</title>
+        <title>WDD Final Project - Home Page</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
         <link rel="stylesheet" href="assets/css/style.css">
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
         </script> 
         <script src = "assets/js/script.js"></script>
     </head>
     <body>
+        
         <!-- Sidebar Hamburger Icon -->
         <div id = "sidebar-button">
             <a id="nav-toggle">
-                <span></span>
+               <span></span>
             </a>
         </div>
-
-        <!-- Sidebar -->
+         <!-- Sidebar -->
         <nav class = "sidebar-container">
-            <!-- Question 1: Sidebar Code Here -->
             <ul>
-                <a href = "#home-section">
+                <a href = "index.html">
                     <li class = "sidebar-item">Home</li>
                 </a>
-                <a href = "#name-section">
-                    <li class = "sidebar-item">Name</li>
+                <a href = "inspiration.html">
+                    <li class = "sidebar-item">Inspirations</li>
                 </a>
-                <a href = "#major-section">
-                    <li class = "sidebar-item">Major</li>
+                <a href = "bbs.html">
+                    <li class = "sidebar-item">BBS</li>
                 </a>
-                <a href = "#fact-section">
-                    <li class = "sidebar-item">Fact</li>
+                <a href = "#resource-page">
+                    <li class = "sidebar-item">Resources</li>
+                </a>
+                <a href = "#about-page">
+                    <li class = "sidebar-item">About</li>
+                </a>
+                <a href = "#contact-page">
+                    <li class = "sidebar-item">Contact</li>
                 </a>
             </ul>
-            <!-- End Question 1 Here (Use as many lines as needed, but don't add code below this point)-->
         </nav>
-
-        <!-- Page Wrapper, Consisting of All the Sections -->
+        <!-- Page Wrapper, Consisting of All the Sections on main page-->
         <div class = "page-wrapper">
-            <!-- Carousel Section -->
-            <section class = "section" id = "carousel-section"> 
-                <div class = "carousel-container">
-                <!-- Question 2: Carousel Code Here -->
-                <div id = "carousel">
-                    <div class = "carousel-item">
-                        <div class = "quote">
-                            The Journey of a Thousand Miles Begins with One Step.
-                            <div class = "author">
-                            Lao Tzu
-                            </div>
+            <div id = "background">
+                <div id = "background-overlay"></div>
+            </div>
+            <div id = "heading-container">
+                <div class = "heading">EduReach</div>
+                <div class = "subheading">Be inspired, connected, and prepared for your education outreach activities.</div>
+            </div>
+            <div id = "login">Login</div>
+            <div id = "search">
+                    <input type = "text" class = "search-box">
+                    <img class = "search-button" src="assets/img/search.png">
+            </div>
+
+            <div id="modal-container">
+                <div id="modal-overlay"></div>
+                    <div id="modal-box">
+                        <div class="modal-header">Login</div>
+                        <div class="modal-content">
+                            <input type = "text" class = "modal-content-item" placeholder = "Enter Username">
+                            <input type = "text" class = "modal-content-item" placeholder = "Enter Password">
+                        </div>
+                        <div class="modal-footer">
+                            <div class="modal-footer-item">Enter</div>
+                            <div class="modal-footer-item">Cancel</div>
+                            <div class="modal-footer-item">Register</div>
                         </div>
                     </div>
-                     <div class = "carousel-item">
-                        <div class = "quote">
-                            There comes a time when you have to choose between turning the page and closing the book.
-                            <div class = "author">
-                            Josh Jameson
-                            </div>
-                        </div>
-                    </div>
-                     <div class = "carousel-item">
-                        <div class = "quote">
-                            Don't leave before you leave.
-                            <div class = "author">
-                            Sheryl Sandberg
-                            </div>
-                        </div>
-                    </div>
-                     <div class = "carousel-item">
-                        <div class = "quote">
-                            If someone offers you an amazing opportunity but you are not sure you can do it, say yes - then learn how to do it later!
-                            <div class = "author">
-                            Richard Branson
-                            </div>
-                        </div>
-                    </div>
-                     <div class = "carousel-item">
-                        <div class = "quote">
-                            Only the Paranoid Survive.
-                            <div class = "author">
-                            Andrew Grove
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- End Question 2 Here (Use as many lines as needed, but don't add code below this point)-->
-                    <div id="carousel-prev">
-                        <img class="img-scaled" src="assets/img/arrowleft.png" />
-                    </div>
-                    <div id="carousel-next">
-                        <img class="img-scaled" src="assets/img/arrowright.png" />
-                    </div>
-                </div>
-            </section>
-            <!-- Name Section -->
-            <section class = "section" id = "name-section">
-                <div class = "text" id = "name-text">
-                    <!-- I am ENTER NAME HERE -->
-                </div>
-            </section>
-            <!-- Major Section -->
-            <section class = "section" id = "major-section">
-                <div class = "text" id = "major-text">
-                    <!-- I am majoring in ENTER MAJOR HERE -->
-                </div>
-            </section>
-            <!-- Random Fact Section -->
-            <section class = "section" id = "fact-section">
-                <div class = "text" id = "fact-text">
-                    <!-- ENTER RANDOM FACT HERE -->
-                </div>
-            </section>
+            </div>
         </div>
+
+
+
+        
     </body>
 </html>

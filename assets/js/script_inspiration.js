@@ -27,16 +27,32 @@ $(document).ready(function() {
     } 
       })
 
-  // Implement show modal when click on login button, and hide modal when click on submit or cancel or on modal overlay
-  $("#login").click(function() {
-      $("#modal-container").show();  
+  //Implement the "slide to left" when the user clicks on #carousel-next here
+
+  //Implement the "slide to right" when the user clicks on #carousel-prev here
+
+  $("#carousel-next").click(function() {
+      var x = parseInt($('#carousel').css('margin-left').replace("px",""));
+          if (x == -3840){
+            return false;
+          } else{
+            var y = x - 960;
+            $("#carousel").css('margin-left', y);
+          }
+    updateLabels;
   })
 
-  $(".modal-footer-item").click(function() {
-      $("#modal-container").hide();
+  $("#carousel-prev").click(function() {
+      var x = parseInt($('#carousel').css('margin-left').replace("px",""));
+          if (x == 0){
+            return false;
+          } else{
+            var y = x + 960;
+            $("#carousel").css('margin-left', y);
+          }
+
+    //updateLabels();
   })
 
-  $("#modal-overlay").click(function() {
-      $("#modal-container").hide();
-  })
+
 });

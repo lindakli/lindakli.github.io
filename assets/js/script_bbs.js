@@ -27,16 +27,6 @@ $(document).ready(function() {
     } 
       })
 
-  // Implement show modal when click on login button, and hide modal when click on submit or cancel or on modal overlay
-  $("#login").click(function() {
-      $("#modal-container").show();  
-  })
+ 
 
-  $(".modal-footer-item").click(function() {
-      $("#modal-container").hide();
-  })
-
-  $("#modal-overlay").click(function() {
-      $("#modal-container").hide();
-  })
 });
